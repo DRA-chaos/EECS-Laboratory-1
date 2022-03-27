@@ -1,0 +1,12 @@
+* C:\Users\DRA\Dropbox\My PC (DESKTOP-MR1852M)\Downloads\Draft3.asc
+M1 N001 NC_01 0 0 IRFZ44N
+R1 N002 N001 100
+VDS N002 N005 11
+R2 N004 N003 1K
+VGS N003 N005 SINE(0 0.5 10000)
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\DRA\Dropbox\My PC (DESKTOP-MR1852M)\Documents\LTspiceXVII\lib\cmp\standard.mos
+.dc dec VGS 0 11 0.5
+.backanno
+.end
